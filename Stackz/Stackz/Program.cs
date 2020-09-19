@@ -34,16 +34,19 @@ namespace Stackz
 
            if (theStack.Contains(""))
                 {
-                //code to execute if condition is true (peek item with theStack.Peek)
+                Console.WriteLine("We found an instance of your desired number.");
+                    theStack.Pop();
+                //code to execute if condition is true (console write "found an instance of ____" then pop.)
             }
            else
             {
+                theStack.Pop();
                 //code to execute if condition is false (pop item with theStack.Pop)
             }
 
             //how do you ensure it does every item in the index, do you loop it somehow?
 
-            Console.WriteLine(theStack); //show all the instances of the search query ONLY [because everything else was popped.]
+       
         }
     }
 }
